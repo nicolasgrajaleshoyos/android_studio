@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Botón eliminar (arriba a la derecha) -->
+    <ImageButton
+        android:id="@+id/btnEliminarHabito"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/btn_eliminar"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <!-- Nombre del hábito (a la izquierda del botón eliminar) -->
+    <TextView
+        android:id="@+id/nombreHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/btnEliminarHabito"
+        android:layout_alignBaseline="@id/btnEliminarHabito"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Descripción del hábito (debajo del nombre) -->
+    <TextView
+        android:id="@+id/descripcionHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/nombreHabito"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp" />
+
+    <!-- Progreso del hábito (debajo de la descripción) -->
+    <TextView
+        android:id="@+id/progresoHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcionHabito"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp" />
+
+    <!-- Botón colocar alarma (debajo del botón eliminar) -->
+    <ImageButton
+        android:id="@+id/btnColocarAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEliminarHabito"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="2dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/btn_configurar_alarma"
+        android:src="@android:drawable/ic_menu_recent_history" />
+
+    <!-- Botón modificar (debajo de la alarma) -->
+    <ImageButton
+        android:id="@+id/btnModificarHabito"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progresoHabito"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/btn_modificar"
+        android:src="@android:drawable/ic_menu_edit" />
+
+    <!-- Botón incrementar progreso (alineado a la izquierda) -->
+    <Button
+        android:id="@+id/btnIncrementarProgreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progresoHabito"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_incrementar_progreso"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

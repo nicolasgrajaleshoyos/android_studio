@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperprincipal"
+    tools:context=".MainActivity2_Nivel_1">
+
+    <TextView
+        android:id="@+id/txt2_Nombre"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt2_nombre"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt2_Vidas"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txt2_vidas"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt2_Score"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/txt2_score"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2_Nombre" />
+
+    <ImageView
+        android:id="@+id/Img_Vidas"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2_Vidas"
+        app:srcCompat="@drawable/tresvidas" />
+
+    <ImageView
+        android:id="@+id/img2_num1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="61dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2_Score"
+        app:srcCompat="@drawable/cero" />
+
+    <ImageView
+        android:id="@+id/img2_num2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Img_Vidas"
+        app:srcCompat="@drawable/cero" />
+
+    <ImageView
+        android:id="@+id/img2_Signo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="121dp"
+        app:layout_constraintEnd_toStartOf="@+id/img2_num2"
+        app:layout_constraintStart_toEndOf="@+id/img2_num1"
+        app:layout_constraintTop_toBottomOf="@+id/txt2_Score"
+        app:srcCompat="@drawable/adicion" />
+
+    <EditText
+        android:id="@+id/Respuesta2"
+        android:layout_width="194dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="91dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img2_num1" />
+
+    <Button
+        android:id="@+id/btn2_Calcular"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="91dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="comprobar"
+        android:text="Button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Respuesta2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

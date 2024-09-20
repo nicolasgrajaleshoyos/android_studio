@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+tools:context=".PiedrapapelOTijeraActivity">
+
+<TextView
+    android:id="@+id/nombre"
+    android:layout_width="377dp"
+    android:layout_height="52dp"
+    android:layout_marginTop="16dp"
+    android:text="Juego de Piedra, Papel o Tijera"
+    android:textAlignment="center"
+    android:textColor="@color/design_default_color_secondary_variant"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@+id/scissorsButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.529"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<!-- Botones de imagen para las elecciones del usuario -->
+
+<!-- Displays -->
+
+<ImageButton
+    android:id="@+id/rockButton"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="48dp"
+    android:layout_marginTop="28dp"
+    android:background="@drawable/piedra"
+    android:contentDescription="Piedra"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+<ImageButton
+    android:id="@+id/paperButton"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="8dp"
+
+    android:background="@drawable/papel"
+    android:contentDescription="Papel"
+    app:layout_constraintStart_toEndOf="@+id/rockButton"
+    app:layout_constraintTop_toBottomOf="@+id/nombre"
+    tools:ignore="MissingConstraints" />
+
+<ImageButton
+    android:id="@+id/scissorsButton"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="8dp"
+
+    android:background="@drawable/tijera"
+    android:contentDescription="Tijera"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.03"
+    app:layout_constraintStart_toEndOf="@+id/paperButton"
+    app:layout_constraintTop_toBottomOf="@+id/nombre"
+    tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/computerChoiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:text="Computadora "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scissorsButton" />
+
+    <TextView
+        android:id="@+id/JugadorChoiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Jugador"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockButton" />
+
+    <TextView
+    android:id="@+id/feedbackTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="68dp"
+    android:layout_marginTop="32dp"
+    android:text="Resultado:"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageRobotView3" />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="136dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="252dp"
+        android:background="@drawable/player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JugadorChoiceTextView" />
+
+    <ImageView
+        android:id="@+id/Robot"
+        android:layout_width="154dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/robot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computerChoiceTextView" />
+
+    <ImageView
+        android:id="@+id/imageRobotView3"
+        android:layout_width="133dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Robot" />
+
+    <ImageView
+        android:id="@+id/imagePlayerView"
+        android:layout_width="131dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="252dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player" />
+
+    <ImageView
+    android:id="@+id/imageView7"
+    android:layout_width="44dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="216dp"
+    android:background="@drawable/vs"
+    app:layout_constraintEnd_toStartOf="@+id/player"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@+id/Robot"
+    app:layout_constraintTop_toBottomOf="@+id/paperButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/vs"
+        app:layout_constraintEnd_toStartOf="@+id/Robot"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/player"
+        app:layout_constraintTop_toBottomOf="@+id/paperButton" />
+
+    <TextView
+        android:id="@+id/attemptsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ganadas:  0 Perdidas: 0   Empates:  0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

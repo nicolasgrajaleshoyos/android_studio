@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppCheckBox</string>
+    <string name="txt_decimal1">Primer Valor</string>
+    <string name="txt_decimal2">Segundo Valor</string>
+    <string name="check_suma">Suma</string>
+    <string name="check_resta">Resta</string>
+    <string name="check_multiplicasion">Multiplicasion</string>
+    <string name="txt_result">la suma es: \nla resta es: \nla multiplicasion es:</string>
+    <string name="calcular">Calcular</string>
+</resources>

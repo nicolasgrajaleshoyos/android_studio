@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraund"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para el nombre del hábito -->
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_habito"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textColorHint="@color/material_dynamic_neutral80"
+        android:inputType="textPersonName" />
+
+    <!-- Campo para la descripción del hábito -->
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/descripcion_habito"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textColorHint="@color/material_dynamic_neutral80"
+        android:inputType="textMultiLine" />
+
+    <!-- Botón para guardar el hábito -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/material_dynamic_primary40"
+        android:padding="10dp"
+        android:text="@string/btn_guardar_habito"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

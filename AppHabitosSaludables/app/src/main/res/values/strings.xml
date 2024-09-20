@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Habitos Saludables</string>
+    <string name="titulo_principal">Mis Hábitos</string>
+    <string name="btn_agregar_habito">Agregar Hábito</string>
+    <string name="nombre_habito">Nombre del Hábito</string>
+    <string name="descripcion_habito">Descripción del Hábito</string>
+    <string name="progreso_habito">Progreso: </string>
+    <string name="btn_incrementar_progreso">Incrementar Progreso</string>
+    <string name="btn_guardar_habito">Guardar</string>
+    <string name="nombre_habito_input_hint">Introduce el nombre del hábito</string>
+    <string name="descripcion_habito_input_hint">Introduce la descripción del hábito</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_confirmar_eliminar">Hábito eliminado</string>
+    <string name="btn_confirmar_actualizar">Hábito actualizado</string>
+    <string name="btn_modificar">Modificar</string>
+    <string name="btn_configurar_alarma">Configurar Alarma</string>
+    <string name="btn_colocar_alarma">Alarma colocada</string>
+    
+</resources>

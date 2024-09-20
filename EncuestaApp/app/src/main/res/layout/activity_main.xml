@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/rb_Colombia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colombia" />
+
+    <RadioButton
+        android:id="@+id/rb_Mexico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="México"
+        android:layout_below="@id/rb_Colombia" />
+
+    <RadioButton
+        android:id="@+id/rb_EEUU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EEUU"
+        android:layout_below="@id/rb_Mexico" />
+
+    <RadioButton
+        android:id="@+id/rb_Messi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messi" />
+
+    <RadioButton
+        android:id="@+id/rb_Neymar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neymar"
+        android:layout_below="@id/rb_Messi" />
+
+    <RadioButton
+        android:id="@+id/rb_CR7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CR7"
+        android:layout_below="@id/rb_Neymar" />
+
+    <CheckBox
+        android:id="@+id/cb_Amarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amarillo" />
+
+    <CheckBox
+        android:id="@+id/cb_Blanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blanco"
+        android:layout_below="@id/cb_Amarillo" />
+
+    <CheckBox
+        android:id="@+id/cb_Rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rojo"
+        android:layout_below="@id/cb_Blanco" />
+
+    <CheckBox
+        android:id="@+id/cb_Morado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morado"
+        android:layout_below="@id/cb_Rojo" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_below="@id/cb_Morado"
+        android:onClick="enviar" />
+
+</RelativeLayout>

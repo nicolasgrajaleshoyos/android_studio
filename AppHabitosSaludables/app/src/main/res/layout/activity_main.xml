@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraund">
+
+    <TextView
+        android:id="@+id/tituloPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Mis Hábitos"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listaHabitos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/btnAgregarHabito"
+        android:layout_below="@id/tituloPrincipal"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/btnAgregarHabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/material_dynamic_primary40"
+        android:padding="10dp"
+        android:text="Agregar Hábito"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button" />
+
+</RelativeLayout>

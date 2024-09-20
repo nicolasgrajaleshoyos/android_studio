@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dado1"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/dice1"
+        app:layout_constraintEnd_toStartOf="@+id/dado2"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dado2"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="88dp"
+        android:src="@drawable/dice1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLanzar"
+        android:layout_width="242dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="160dp"
+        android:text="Lanzar Dados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dado1" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="316dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
+        android:text="Resultado"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLanzar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSTRUCCIONES:se gana cuando salga par "
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">juegoInfantil</string>
+    <string name="txt1_nombre">¿como te llamas?</string>
+    <string name="btn_play">jugar</string>
+    <string name="txt1_score">score: </string>
+
+    <string name="txt2_nombre">Jugador </string>
+    <string name="txt2_score">Score: </string>
+    <string name="txt2_vidas">Vidas </string>
+    <string name="txt2_resultado">Resultado </string>
+    <string name="btn_calcular">calcular </string>
+</resources>
